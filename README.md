@@ -27,18 +27,22 @@ Prerequisites:
   
 Example output:
   
-For Vector
-P = 6000
+For Vector  
+`P = 6000`
 
-                  Ordered   Unordered   Inversely ordered
-Select(6)          39.500      38.450             38.000
-Select(1)Exchange  39.900     100.300             45.250
-Shell(2)            0.050       1.000              0.050
+| Algorithm         | Ordered | Unordered | Inversely ordered |
+|------------------|---------|-----------|-------------------|
+| Select(6)        | 39.500  | 38.450    | 38.000            |
+| Select(1)Exchange| 39.900  | 100.300   | 45.250            |
+| Shell(2)         | 0.050   | 1.000     | 0.050             |
 
-For 3DArray
-P = 6000, M = 16, N = 16
 
-                  Ordered   Unordered   Inversely ordered
-Select(6)          70.450      82.200             81.300
-Select(1)Exchange  57.700   14080.150          28273.199
-Shell(2)            0.450     136.400             46.850
+
+For 3D Array  
+`P = 6000, M = 16, N = 16`
+
+| Algorithm         | Ordered | Unordered | Inversely ordered |
+|------------------|---------|-----------|-------------------|
+| Select(6)        | 70.450  | 82.200    | 81.300            |
+| Select(1)Exchange| 57.700  | 14080.150 | 28273.199         |
+| Shell(2)         | 0.450   | 136.400   | 46.850            |
