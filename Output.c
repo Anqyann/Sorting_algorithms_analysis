@@ -1,6 +1,6 @@
 #include "Menu.h"
 #include "Output.h"
-void out_vec() //вивід вектора на екран
+void out_vec() //output vector to screen
 {
     printf("\nVector:\n");
     for(int i = 0; i < P; i++)
@@ -8,7 +8,7 @@ void out_vec() //вивід вектора на екран
         printf("%3d", Vec[i]);
     }
 }
-void out_3darray() //вивід перерізів 3Д масиву
+void out_3darray() //output 3D array sections
 {
     printf("\n3D Array:\n");
     for (int k = 0; k < P; k++)
