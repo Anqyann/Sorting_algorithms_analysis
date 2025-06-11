@@ -1,6 +1,6 @@
 #include "Menu.h"
 #include "Vector_Sort.h"
-clock_t Select_6() //сортування №6 методу прямого вибору для вектора
+clock_t Select_6() //sorting of the direct selection method for a vector
 {
     int imin, tmp;
     clock_t time_start, time_stop;
@@ -20,7 +20,7 @@ clock_t Select_6() //сортування №6 методу прямого ви�
     time_stop = clock();
     return time_stop - time_start;
 }
-clock_t Select_1_Exchange() //сортування "вибір№1 – обмін" для вектора
+clock_t Select_1_Exchange() //sorting "choice - exchange" for vector
 {
     int Min;
     clock_t time_start, time_stop;
@@ -39,7 +39,7 @@ clock_t Select_1_Exchange() //сортування "вибір№1 – обмі�
     time_stop = clock();
     return time_stop - time_start;
 }
-clock_t Shell_2() //сортування №2 Шелла для вектора
+clock_t Shell_2() //Shell's sorting  for vector
 {
     int tmp, t, j, k;
     clock_t time_start, time_stop;
