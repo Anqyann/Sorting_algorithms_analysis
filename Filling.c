@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "Filling.h"
 #include "Menu.h"
-void ordered_filling_vec() //впорядковане заповнення вектора
+void ordered_filling_vec() //ordered filling of the vector
 {
     int number = 0;
     for(int i = 0; i < P; i++)
@@ -9,7 +9,7 @@ void ordered_filling_vec() //впорядковане заповнення ве�
         Vec[i] = number++;
     }
 }
-void unordered_filling_vec() //невпорядковане заповнення вектора
+void unordered_filling_vec() //disordered filling of the vector
 {
     int number = 0;
     srand(time(NULL));
@@ -18,7 +18,7 @@ void unordered_filling_vec() //невпорядковане заповнення
         Vec[i] = rand()%P;
     }
 }
-void inversely_ordered_filling_vec() //обернено впорядковане заповнення вектора
+void inversely_ordered_filling_vec() //reverse ordered filling of the vector
 {
     int number = P;
     for (int i = 0; i < P; i++)
@@ -26,7 +26,7 @@ void inversely_ordered_filling_vec() //обернено впорядковане
         Vec[i] = number--;
     }
 }
-void ordered_filling_3d_array() //впорядковане заповнення тривимвірного масиву
+void ordered_filling_3d_array() //ordered filling of the three-dimensional array
 {
     int number = 0;
     for (int k = 0; k < P; k++)
@@ -42,7 +42,7 @@ void ordered_filling_3d_array() //впорядковане заповнення 
 
     }
 }
-void unordered_filling_3d_array() //невпорядковане заповнення тривимвірного масиву
+void unordered_filling_3d_array() //disordered filling of the three-dimensional array
 {
     int number = 0;
     srand(time(NULL));
@@ -59,7 +59,7 @@ void unordered_filling_3d_array() //невпорядковане заповне�
 
     }
 }
-void inversely_ordered_filling_3d_array() //обернено впорядковане заповнення тривимвірного масиву
+void inversely_ordered_filling_3d_array() //reverse ordered filling of the three-dimensional array
 {
     int number = P*M*N;
     for (int k = 0; k < P; k++)
