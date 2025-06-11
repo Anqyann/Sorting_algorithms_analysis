@@ -6,11 +6,11 @@
 #include "Filling.h"
 #include "Output.h"
 #include "Table.h"
-void menu()//головне меню
+void menu()//main menu
 {
     while(1)
     {
-        int mode;//зміна для вибору режиму меню
+        int mode;//menu mode
         printf("\nChoose:");
         printf("\n'1' for Vector");
         printf("\n'2' for 3D Array");
@@ -18,7 +18,7 @@ void menu()//головне меню
         printf("\n'4' for Exit");
         printf("\nInput: ");
         scanf("%d", &mode);
-        switch(mode) //вибір режиму
+        switch(mode) 
         {
         case 1:
             menu_arr_sort(1);
@@ -40,9 +40,9 @@ void menu()//головне меню
         }
     }
 }
-void menu_arr_sort(int mode)//меню для вибору сортування та наповнення масиву
+void menu_arr_sort(int mode)//menu for selecting sorting and filling the array
 {
-    int filling, sort; //змінні для вибору наповнення масиву та сортування
+    int filling, sort; 
     system("cls");
     if(mode == 1)
     {
@@ -63,7 +63,7 @@ void menu_arr_sort(int mode)//меню для вибору сортування 
     scanf("%d", &filling);
     if(mode == 1)
     {
-        switch(filling) //вибір для виклику потрібної функції для заповнення вектору
+        switch(filling) //choose to call the desired function to fill the vector
         {
         case 1:
             ordered_filling_vec();
@@ -84,9 +84,9 @@ void menu_arr_sort(int mode)//меню для вибору сортування 
         }
         out_vec();
     }
-    else if(mode == 2)
+    else if(mode == 2)//select to call the desired function to fill the 3D array
     {
-        switch(filling) //вибір для виклику потрібної функції для заповнення 3Д масиву
+        switch(filling) 
         {
         case 1:
             ordered_filling_3d_array();
@@ -115,7 +115,7 @@ void menu_arr_sort(int mode)//меню для вибору сортування 
     scanf("%d", &sort);
     if(mode == 1)
     {
-        switch(sort) //вибір для виклику потрібної функції для сортування вектору
+        switch(sort) //choose to call the desired function to sort the vector
         {
         case 1:
             printf("\ntime %3.3f", Select_6());
@@ -138,7 +138,7 @@ void menu_arr_sort(int mode)//меню для вибору сортування 
     }
     else if(mode == 2)
     {
-        switch(sort) //вибір для виклику потрібної функції для сортування 3Д масиву
+        switch(sort) //select to call the desired function to sort the 3D array
         {
         case 1:
             printf("\ntime %3.3f",Select_6_3DArr());
@@ -164,7 +164,7 @@ void menu_arr_sort(int mode)//меню для вибору сортування 
     getch();
     system("cls");
 }
-void Arr3D_declaration()//оголошення тривимірного масиву
+void Arr3D_declaration()//three-dimensional array declaration
 {
     Arr3D = (int***) malloc(P*sizeof(int**));
     for (int k=0; k<P; k++)
@@ -174,7 +174,7 @@ void Arr3D_declaration()//оголошення тривимірного маси
             Arr3D[k][i] = (int*) malloc(N*sizeof(int));
     }
 }
-void Arr3D_free()//звілення пам'яті
+void Arr3D_free()//freeing memory
 {
     for (int k=0; k<P; k++)
     {
