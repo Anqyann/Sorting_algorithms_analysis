@@ -3,7 +3,7 @@
 This program sorts a three-dimensional array Arr3D[P][M][N] using multiple sorting algorithms:
 
 - Direct selection sort 
-- Hybrid "selection #1 - exchange" algorithm 
+- Hybrid "selection - exchange" algorithm 
 - Shell sort, implemented as a hybrid insertion-exchange algorithm
 
 The sorting rearranges the array sections so that the values of the vector of the first elements of each section A[*, 0, 0] are in non-decreasing order.
