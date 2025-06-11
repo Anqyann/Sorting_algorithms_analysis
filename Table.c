@@ -4,8 +4,8 @@
 #include "Vector_Sort.h"
 #include "3D_Array_Sort.h"
 #include "Filling.h"
-float ordered, unordered, inversely_ord; //змінні для виводу часу для впорядкованого, невпорядкованого, обернено впорядкованого масиву
-void table() //функція для виводу таблиці часу сортування
+float ordered, unordered, inversely_ord; //variables for outputting time for sorted, unsorted, reverse sorted array
+void table() //function to output the sort time table
 {
     system("cls");
     printf("\n For Vector");
@@ -43,12 +43,12 @@ void table() //функція для виводу таблиці часу сор
     getch();
     system("cls");
 }
-void vec_fill_sort(int filling, int sorting)//процедура для заповнення і сортування вектору вказаним чином
+void vec_fill_sort(int filling, int sorting)//procedure for filling and sorting the vector 
 {
-    switch(filling) //вибір заповнення вектору
+    switch(filling) //choose vector fill
     {
     case 1:
-        switch(sorting) //вибір сортування вектору
+        switch(sorting) //choose vector sorting
         {
         case 1:
             for (int i = 0; i < measurements_number; i++)
@@ -136,13 +136,13 @@ void vec_fill_sort(int filling, int sorting)//процедура для запо
         break;
     }
 }
-void arr3d_fill_sort(int filling, int sorting) //процедура для заповнення і сортування 3Д масиву вказаним чином
+void arr3d_fill_sort(int filling, int sorting) //procedure for filling and sorting a 3D array
 {
-    Arr3D_declaration(); //оголошення 3Д масиву
-    switch(filling) //вибір наповнення масиву
+    Arr3D_declaration(); //declaration of 3D array
+    switch(filling) //selecting the array filling
     {
     case 1:
-        switch(sorting) //вибір сортування масиву
+        switch(sorting)//select array sorting
         {
         case 1:
             for (int i = 0; i < measurements_number; i++)
@@ -229,5 +229,5 @@ void arr3d_fill_sort(int filling, int sorting) //процедура для за�
         }
         break;
     }
-    Arr3D_free(); //звіленння пам'яті
+    Arr3D_free(); //freeing memory
 }
