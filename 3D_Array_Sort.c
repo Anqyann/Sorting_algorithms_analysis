@@ -1,6 +1,6 @@
 #include "Menu.h"
 #include "3D_Array_Sort.h"
-clock_t Select_6_3DArr() //сортування №6 методу прямого вибору для тривимірного масиву
+clock_t Select_6_3DArr() //sorting of the direct selection method for a three-dimensional array
 {
     int imin, tmp;
     clock_t time_start, time_stop;
@@ -27,7 +27,7 @@ clock_t Select_6_3DArr() //сортування №6 методу прямого
     time_stop = clock();
     return time_stop - time_start;
 }
-clock_t Select_1_Exchange_3DArr()//сортування "вибір№1 – обмін" для тривимірного масиву
+clock_t Select_1_Exchange_3DArr()//sorting "selection - exchange" for a three-dimensional array
 {
     int Min, tmp;
     clock_t time_start, time_stop;
@@ -55,7 +55,7 @@ clock_t Select_1_Exchange_3DArr()//сортування "вибір№1 – об
     time_stop = clock();
     return time_stop - time_start;
 }
-clock_t Shell_2_3DArr()//сортування №2 Шелла для тривимірного масиву
+clock_t Shell_2_3DArr()//Shell's sorting for a three-dimensional array
 {
     int tmp, t, j, k, tmp2;
     clock_t time_start, time_stop;
