@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Menu.h"
-int main()//головна функція програми
+int main()
 {
-    menu();//виклик функції menu з модуля Menu
+    menu();//calling the menu function from the Menu module
     return 0;
 }
